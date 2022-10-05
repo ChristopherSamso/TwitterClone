@@ -96,16 +96,16 @@ extension ProfileView {
             }
             
             Text("@\(viewModel.user.username)").font(.subheadline).foregroundColor(.gray)
-            Text("Ur moms fav villain").font(.subheadline).padding(.vertical)
+            Text("This is the bio of a really cool person.").font(.subheadline).padding(.vertical)
             
             HStack(spacing: 24) {
                 HStack {
                     Image(systemName: "mappin.and.ellipse")
-                    Text("Gotham, City")
+                    Text("Somewhere, Someplace")
                 }
                 HStack {
                     Image(systemName: "link")
-                    Text("www.swagballer.com")
+                    Text("www.mywebsite.com")
                 }
             }.foregroundColor(.gray).font(.caption)
             
