@@ -30,7 +30,10 @@ struct ProfileView: View {
             
             tweetFilterBar
             
-            tweetsView
+            tweetsView.onAppear {
+                viewModel.fetchUserTweets()
+                viewModel.fetchLikedTweets()
+            }
             
             Spacer()
             

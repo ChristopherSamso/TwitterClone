@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct LoginView: View {
+    
     @State private var email = ""
     @State private var password = ""
     @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
         //  Parent Container
         VStack {
@@ -47,7 +49,8 @@ struct LoginView: View {
             Spacer()
             
             NavigationLink {
-                RegistrationView().navigationBarHidden(true)
+                RegistrationView()
+                    .navigationBarHidden(true)
             } label: {
                 HStack {
                     Text("Don't have an account?").font(.footnote)

@@ -26,32 +26,32 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            ContentView()
-        }
-    }
-}
-
 extension ContentView {
     
     var mainInterfaceView: some View {
         ZStack(alignment: .topLeading) {
-            MainTabView().navigationBarHidden(showMenu)
+            MainTabView()
+                .navigationBarHidden(showMenu)
             
             if showMenu {
                 ZStack {
                     Color(.black).opacity(showMenu ? 0.25 : 0.0)
-                }.onTapGesture {
+                }
+                .onTapGesture {
                     withAnimation(.easeInOut) {
                         showMenu = false
                     }
-                }.ignoresSafeArea()
+                }
+                .ignoresSafeArea()
             }
             
-            SideMenuView().frame(width: 300).offset(x: showMenu ? 0 : -300, y: 0).background(showMenu ? Color.white : Color.clear)
-        }.navigationTitle("home").navigationBarTitleDisplayMode(.inline).toolbar {
+            SideMenuView()
+                .frame(width: 300).offset(x: showMenu ? 0 : -300, y: 0)
+                .background(showMenu ? Color.white : Color.clear)
+        }
+        .navigationTitle("home")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 if let user = viewModel.currentUser {
                     Button {
@@ -67,7 +67,8 @@ extension ContentView {
                     }
                 }
             }
-        }.onAppear {
+        }
+        .onAppear {
             showMenu = false
         }
     }

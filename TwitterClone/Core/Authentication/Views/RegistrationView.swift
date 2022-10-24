@@ -46,21 +46,21 @@ struct RegistrationView: View {
                 presentationMode.wrappedValue.dismiss()
             } label: {
                 HStack {
-                    Text("Already have an account?").font(.footnote)
-                    Text("Sign In").font(.footnote).fontWeight(.semibold)
+                    Text("Already have an account?")
+                        .font(.footnote)
+                    Text("Sign In")
+                        .font(.footnote).fontWeight(.semibold)
                 }
-            }.padding(.bottom, 32)
-
-            
-        }.ignoresSafeArea().fullScreenCover(isPresented: $viewModel.didAuthenticateUser) {
-            ProfilePhotoSelectorView()
+            }
+            .padding(.bottom, 32)
         }
-        
+        .ignoresSafeArea()
+        .contentTransition(.opacity)
+        .fullScreenCover(isPresented: $viewModel.didAuthenticateUser, onDismiss: {
+            presentationMode.wrappedValue.dismiss()
+        },content: {
+            ProfilePhotoSelectorView()
+        })
     }
 }
 
-struct RegistrationView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegistrationView()
-    }
-}
