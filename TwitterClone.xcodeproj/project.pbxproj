@@ -34,7 +34,7 @@
 		783E9E4028E2563C0070FF2E /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E9E3F28E2563C0070FF2E /* RoundedShape.swift */; };
 		783E9E4228E25D250070FF2E /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E9E4128E25D250070FF2E /* CustomInputField.swift */; };
 		783E9E4528E2687F0070FF2E /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E9E4428E2687F0070FF2E /* AuthenticationHeaderView.swift */; };
-		783E9E4728E3B9570070FF2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783E9E4628E3B9570070FF2E /* GoogleService-Info.plist */; };
+		78737E382915956D008061F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78737E372915956C008061F0 /* GoogleService-Info.plist */; };
 		787A62EF28E3BACD004F54AD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 787A62EE28E3BACD004F54AD /* FirebaseAuth */; };
 		787A62F128E3BACD004F54AD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 787A62F028E3BACD004F54AD /* FirebaseFirestore */; };
 		787A62F328E3BACD004F54AD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 787A62F228E3BACD004F54AD /* FirebaseFirestoreSwift */; };
@@ -104,7 +104,7 @@
 		783E9E3F28E2563C0070FF2E /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		783E9E4128E25D250070FF2E /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		783E9E4428E2687F0070FF2E /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
-		783E9E4628E3B9570070FF2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		78737E372915956C008061F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		787A62F628E3D210004F54AD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		787A62F828E4F376004F54AD /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		787A62FB28E50142004F54AD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 				78303FA528D97EF2005B4557 /* ContentView.swift */,
 				78303FA328D97EF2005B4557 /* TwitterCloneApp.swift */,
 				78303FA728D97EF3005B4557 /* Assets.xcassets */,
-				783E9E4628E3B9570070FF2E /* GoogleService-Info.plist */,
+				78737E372915956C008061F0 /* GoogleService-Info.plist */,
 				78303FA928D97EF3005B4557 /* Preview Content */,
 			);
 			path = TwitterClone;
@@ -615,7 +615,7 @@
 			files = (
 				78303FAB28D97EF3005B4557 /* Preview Assets.xcassets in Resources */,
 				78303FA828D97EF3005B4557 /* Assets.xcassets in Resources */,
-				783E9E4728E3B9570070FF2E /* GoogleService-Info.plist in Resources */,
+				78737E382915956D008061F0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

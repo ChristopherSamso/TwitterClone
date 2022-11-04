@@ -18,8 +18,15 @@ struct FeedView: View {
             Button {
                 showNewTweetView.toggle()
             } label: {
-                Image("new_tweet").resizable().frame(width: 28, height: 28).padding()
-            }.background(Color(.systemBlue)).foregroundColor(.white).clipShape(Circle()).padding().fullScreenCover(isPresented: $showNewTweetView, onDismiss: {
+                Image("new_tweet")
+                    .resizable()
+                    .frame(width: 28, height: 28)
+                    .padding()
+            }
+            .background(Color(.systemBlue))
+            .foregroundColor(.white)
+            .clipShape(Circle()).padding()
+            .fullScreenCover(isPresented: $showNewTweetView, onDismiss: {
                 viewModel.fetchTweets()
             }) {
                 NewTweetView()
